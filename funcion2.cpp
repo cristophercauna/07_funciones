@@ -19,6 +19,8 @@ int verificar(int val){
             contador=contador+1;
         }
     }
+    cout << "\nCantidad de divisores: " << contador << endl;
+    
     if(contador==2){
         return 1;
     }
