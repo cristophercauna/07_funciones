@@ -44,3 +44,4 @@ int divi (int val1 , int val2){
 	}
 	return (division);
 }
+// RESPUESTAS MAS DETALLADAS CON SUS RESPECTIVOS VALORES A CALCULAR
