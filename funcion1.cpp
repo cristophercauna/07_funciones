@@ -8,8 +8,8 @@ int divi(int val1 , int val2);
 
 int main(){
 	int num1,num2,resultadomulti,resultadodivi;
-	cout<<"Ingresel el primer numero: "; cin>>num1;
-	cout<<"Ingresel el segundo numero: "; cin>>num2;
+	cout<<"Ingrese el primer numero: "; cin>>num1;
+	cout<<"Ingrese el segundo numero: "; cin>>num2;
 	suma(num1,num2);
 	resta(num1,num2);
 	resultadomulti=produc(num1,num2);
@@ -36,7 +36,8 @@ int produc (int val1, int val2){
 int divi (int val1 , int val2){
 	int division;
 	if(val2==0){
-		cout<<"no existe division entre 0 pe "<<endl;
+		// Esta validación evita que se realice una división por cero
+		cout<<"ERROR: La division entre 0 no existe "<<endl;
 	}
 	else{
 		division=val1/val2;
