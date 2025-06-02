@@ -6,8 +6,16 @@ int main(){
     int a,b,MCM,MCD;
     cout<<"ingrese el primer numero: "; cin>>a;
     cout<<"ingrese el segundo numero: "; cin>>b;
+    if (a <= 0 || b <= 0) {
+        cout << "Error: Ambos numeros deben ser positivos y mayores que cero." << endl;
+        return 1; 
+    }
     MCD=funcionmcd(a,b);
+    MCM=funcionmcm(a,b);
 
+     cout << "El Maximo Comun Divisor (MCD) es: " << MCD << endl;
+    cout << "El Minimo Comun Multiplo (MCM) es: " << MCM << endl;
+    
     return 0;
 }
 int funcionmcd(int A, int B){
