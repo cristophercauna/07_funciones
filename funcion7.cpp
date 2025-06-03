@@ -6,7 +6,11 @@ int main(){
     int a,b;
     cout<<"Ingrese el primer numero"; cin>>a;
     cout<<"Ingrese el segundo numero"; cin>>b;
-    verificarAmistad(a,b);
+    if (a<=0 || b<=0) {
+        cout<<"Ambos numeros deben ser positivos y mayores que cero."<<endl;
+        return 1;
+}
+verificarAmistad(a,b);
     return 0;
 }
 int funcionsumadivisores(int num1){
